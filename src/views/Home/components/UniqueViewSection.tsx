@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import IconInfo from '../../../shared/components/IconInfo/IconInfo';
+import IconInfo from '../../../shared/components/TextBlock/IconInfo';
 import SectionHeader from '../../../shared/components/Texts/SectionHeader';
 import { ImMobile } from 'react-icons/im';
 import { dashboardAng40 } from '../../../assets';

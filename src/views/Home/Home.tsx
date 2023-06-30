@@ -1,8 +1,8 @@
 import Carousel from '../../shared/components/Carousel/Carousel';
-import Detailtext from '../../shared/components/Texts/Detailtext';
 import { cellphone, staringView } from '../../assets';
 import DetailsSection from './components/DetailsSection';
 import UniqueViewSection from './components/UniqueViewSection';
+import GreatFeaturesSection from './components/GreatFeaturesSection';
 
 function Home() {
   const carouselItems = [
@@ -20,6 +20,7 @@ function Home() {
       </div>
       <DetailsSection />
       <UniqueViewSection />
+      <GreatFeaturesSection />
     </div>
   );
 }

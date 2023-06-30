@@ -1,4 +1,4 @@
-import { FC, Fragment, HtmlHTMLAttributes, HTMLProps, ReactNode } from 'react';
+import { FC, HTMLProps, ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
 
 interface HeadingsProps extends HTMLProps<HTMLHeadingElement> {

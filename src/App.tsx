@@ -5,7 +5,7 @@ import './App.css';
 import Carousel from './shared/components/Carousel/Carousel';
 import { staringView, cellphone, notebook } from './assets';
 import { useSwiper } from 'swiper/react';
-import Detailtext from './shared/components/Texts/Detailtext';
+import Detailtext from './shared/components/TextBlock/Detailtext';
 import Home from './views/Home/Home';
 
 function App() {

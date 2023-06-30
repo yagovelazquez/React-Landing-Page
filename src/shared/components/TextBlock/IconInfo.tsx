@@ -1,6 +1,5 @@
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 import { IconBaseProps } from 'react-icons';
-import { ImMobile } from 'react-icons/im';
 import Headings from '../Texts/Heading';
 import Paragraph from '../Texts/Paragraph';
 

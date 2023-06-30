@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import Detailtext from '../../../shared/components/Texts/Detailtext';
+import Detailtext from '../../../shared/components/TextBlock/Detailtext';
 
 interface DetailsSectionProps {
   // TODO: Add prop types

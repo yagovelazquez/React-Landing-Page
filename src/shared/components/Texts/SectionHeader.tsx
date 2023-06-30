@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { twMerge } from 'tailwind-merge';
 import SmallBar from '../layout/SmallBar';
 import Headings from './Heading';
 import Paragraph from './Paragraph';
@@ -9,11 +10,13 @@ interface SectionHeaderProps {
     className?: string;
   }[];
   paragraph?: string;
+  containerClassname?: string;
 }
 
-const SectionHeader: FC<SectionHeaderProps> = ({ headings, paragraph }) => {
+const SectionHeader: FC<SectionHeaderProps> = ({ headings, paragraph, containerClassname }) => {
+  const mergedContainerClassname = twMerge('flex flex-col items-center', containerClassname)
   return (
-    <div className="flex flex-col items-center">
+    <div className={mergedContainerClassname}>
       <SmallBar />
       {headings.map((heading) => (
         <Headings

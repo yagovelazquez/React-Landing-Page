@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import Headings from './Heading';
-import Paragraph from './Paragraph';
+import Headings from '../Texts/Heading';
+import Paragraph from '../Texts/Paragraph';
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
 
 interface DetailtextProps {
