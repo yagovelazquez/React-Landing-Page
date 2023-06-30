@@ -6,7 +6,7 @@ interface ParagraphProps extends HTMLProps<HTMLParagraphElement> {
 }
 
 const Paragraph: FC<ParagraphProps> = ({ className, children, ...rest }) => {
-  const classNames = twMerge('text-[#aeaeae] text-[13px] leading-[19px]', className);
+  const classNames = twMerge('text-paragraph text-[13px] leading-[19px]', className);
   return (
     <p className={classNames} {...rest}>
       {children}

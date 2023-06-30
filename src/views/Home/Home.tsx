@@ -1,8 +1,8 @@
 import Carousel from '../../shared/components/Carousel/Carousel';
-import Detailtext from '../../shared/components/DetailText/Detailtext';
+import Detailtext from '../../shared/components/Texts/Detailtext';
 import { cellphone, staringView } from '../../assets';
 import DetailsSection from './components/DetailsSection';
-
+import UniqueViewSection from './components/UniqueViewSection';
 
 function Home() {
   const carouselItems = [
@@ -18,7 +18,8 @@ function Home() {
       <div className="w-full h-[470px]">
         <Carousel carouselItems={carouselItems} />
       </div>
-<DetailsSection />
+      <DetailsSection />
+      <UniqueViewSection />
     </div>
   );
 }
