@@ -1,25 +1,24 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Carousel from './shared/components/Carousel/Carousel';
+import { staringView, cellphone, notebook } from './assets';
+import { useSwiper } from 'swiper/react';
+import Detailtext from './shared/components/DetailText/Detailtext';
+import Home from './views/Home/Home';
 
 function App() {
+  const carouselItems = [
+    <div className="w-full">
+      {' '}
+      <img alt="" className="w-full grayscale-[80%]" src={staringView} />
+    </div>,
+    <img alt="" className="w-full grayscale-[80%]" src={cellphone} />,
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Home />
   );
 }
 
