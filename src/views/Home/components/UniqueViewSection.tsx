@@ -10,8 +10,8 @@ interface UniqueViewSectionProps {
 }
 
 const headings = [
-  { title: 'Over 40+ unique view', className: 'text-title mt-[10px]' },
-  { title: 'with many custom components', className: 'text-primary mb-[10px]' },
+  { title: 'Over 40+ unique view', className: 'text-title' },
+  { title: 'with many custom components', className: 'text-primary' },
 ];
 
 const UniqueViewSection: FC<UniqueViewSectionProps> = () => {

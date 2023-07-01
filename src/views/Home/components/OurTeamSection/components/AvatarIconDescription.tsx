@@ -4,6 +4,7 @@ import Headings from '../../../../../shared/components/Texts/Heading';
 import Paragraph from '../../../../../shared/components/Texts/Paragraph';
 import { BiLogoLinkedin, BiLogoFacebook } from 'react-icons/bi';
 import { AiOutlineTwitter } from 'react-icons/ai';
+import IconWithCircleBg from '../../../../../shared/components/Icons/IconWithCircleBg';
 
 interface AvatarIconDescriptionProps {
   description: string;
@@ -36,13 +37,7 @@ const AvatarIconDescription: FC<AvatarIconDescriptionProps> = ({
       <Paragraph className="mb-[16px] text-center">{description}</Paragraph>
       <div className="flex gap-3">
         {mediaIcons.map((Icon) => (
-          <div className="h-[27px] cursor-pointer w-[27px] rounded-[50%] bg-primary hover:bg-darkPrimary flex items-center justify-center">
-            <Icon
-              color="white"
-              size={'13px'}
-              className={'bg-primary hover:bg-darkPrimary'}
-            />
-          </div>
+          <IconWithCircleBg Icon={Icon} iconClassName='w-[13px] h-[13px] ' />
         ))}
       </div>
     </div>

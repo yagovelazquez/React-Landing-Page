@@ -10,7 +10,7 @@ interface OurTeamSectionProps {
   // TODO: Add prop types
 }
 
-const headings = [{ title: 'Our Team', className: 'my-[10px] text-title' }];
+const headings = [{ title: 'Our Team', className: 'text-title' }];
 
 const avatarDescriptionList = [
   {

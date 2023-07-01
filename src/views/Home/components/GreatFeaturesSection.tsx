@@ -9,7 +9,7 @@ interface GreatFeaturesSectionProps {
 }
 
 const headings = [
-  { title: 'Discover great feautres', className: 'my-[10px] text-title' },
+  { title: 'Discover great feautres', className: 'text-title' },
 ];
 
 const GreatFeaturesSection: FC<GreatFeaturesSectionProps> = () => {

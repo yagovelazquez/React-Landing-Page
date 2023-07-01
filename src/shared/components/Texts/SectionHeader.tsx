@@ -14,11 +14,11 @@ interface SectionHeaderProps {
 }
 
 const SectionHeader: FC<SectionHeaderProps> = ({ headings, paragraph, containerClassname }) => {
-  const mergedContainerClassname = twMerge('flex flex-col items-center', containerClassname)
+  const mergedContainerClassname = twMerge('flex flex-col items-center gap-[8px]', containerClassname)
   return (
     <div className={mergedContainerClassname}>
       <SmallBar />
-      {headings.map((heading) => (
+      <div className='flex flex-col items-center justify-center'>      {headings.map((heading) => (
         <Headings
           variant="h1"
           className={`font-[200] ${heading.className}`}
@@ -27,6 +27,7 @@ const SectionHeader: FC<SectionHeaderProps> = ({ headings, paragraph, containerC
           {heading.title}
         </Headings>
       ))}
+      </div>
       <Paragraph className="mb-2">{paragraph}</Paragraph>
     </div>
   );

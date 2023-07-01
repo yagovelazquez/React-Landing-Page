@@ -6,6 +6,7 @@ import dashboard from './dashboard.png'
 import andreaDoe from './andreaDoe.jpg'
 import jhenifferDoe from './jhenifferDoe.jpg'
 import johnDoe from './johnDoe.jpg'
+import iphone from './iphone.jpg'
 
 
-export { staringView, cellphone, notebook, dashboardAng40, dashboard, johnDoe, jhenifferDoe, andreaDoe };
+export { iphone, staringView, cellphone, notebook, dashboardAng40, dashboard, johnDoe, jhenifferDoe, andreaDoe };
