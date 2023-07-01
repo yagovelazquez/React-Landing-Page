@@ -3,6 +3,7 @@ import { cellphone, staringView } from '../../assets';
 import DetailsSection from './components/DetailsSection';
 import UniqueViewSection from './components/UniqueViewSection';
 import GreatFeaturesSection from './components/GreatFeaturesSection';
+import OurTeamSection from './components/OurTeamSection/OurTeamSection';
 
 function Home() {
   const carouselItems = [
@@ -21,6 +22,7 @@ function Home() {
       <DetailsSection />
       <UniqueViewSection />
       <GreatFeaturesSection />
+      <OurTeamSection />
     </div>
   );
 }

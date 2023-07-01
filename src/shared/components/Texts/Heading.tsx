@@ -2,7 +2,7 @@ import { FC, HTMLProps, ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
 
 interface HeadingsProps extends HTMLProps<HTMLHeadingElement> {
-  variant: 'h2' | 'h1' | 'h3';
+  variant: 'h2' | 'h1' | 'h3' | 'h5';
   className?: string;
   children: string | ReactNode;
   }
@@ -12,6 +12,8 @@ interface HeadingsProps extends HTMLProps<HTMLHeadingElement> {
   variant === 'h2' && 'text-xl',
   variant === 'h1' && 'text-[30px] leading-[36px]',
   variant === 'h3' && 'text-[18px] leading-[21.6px]',
+  variant === 'h3' && 'text-[18px] leading-[21.6px]',
+  variant === 'h5' && 'text-[14px] leading-[16.8px]',
   className,
   );
   

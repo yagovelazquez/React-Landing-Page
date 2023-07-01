@@ -13,7 +13,7 @@ const headings = [
 
 const GreatFeaturesSection: FC<GreatFeaturesSectionProps> = () => {
   return (
-    <div className="items-center justify-center flex flex-col">
+    <div className="items-center justify-center flex flex-col mb-[60px]">
       <SectionHeader
         containerClassname="my-[60px]"
         headings={headings}

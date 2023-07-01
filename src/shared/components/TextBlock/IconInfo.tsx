@@ -9,14 +9,14 @@ interface IconInfoProps {
   Icon: FC<IconBaseProps>;
 }
 
-const IconInfo: FC<IconInfoProps> = ({Icon, description, title}) => {
+const IconInfo: FC<IconInfoProps> = ({ Icon, description, title }) => {
   return (
-    <div className='flex justify-center items-center flex-col w-[255px]'>
-      <Icon size={'27px'} className='text-primary'></Icon>
-      <Headings className='text-title font-[100] my-[10px]' variant="h3">{title}</Headings>
-      <Paragraph className='text-center'>
-       {description}
-      </Paragraph>
+    <div className="flex justify-center items-center flex-col w-[255px]">
+      <Icon size={'27px'} className="text-primary"></Icon>
+      <Headings className="text-title font-[100] my-[10px]" variant="h3">
+        {title}
+      </Headings>
+      <Paragraph className="text-center">{description}</Paragraph>
     </div>
   );
 };
