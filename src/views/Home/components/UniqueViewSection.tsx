@@ -3,6 +3,7 @@ import IconInfo from '../../../shared/components/TextBlock/IconInfo';
 import SectionHeader from '../../../shared/components/Texts/SectionHeader';
 import { ImMobile } from 'react-icons/im';
 import { dashboardAng40 } from '../../../assets';
+import SectionContainer from '../../../shared/components/layout/SectionContainer';
 
 interface UniqueViewSectionProps {
   // TODO: Add prop types
@@ -15,7 +16,7 @@ const headings = [
 
 const UniqueViewSection: FC<UniqueViewSectionProps> = () => {
   return (
-    <div className="flex flex-col items-center justify-center mt-[70px] border-primary">
+      <SectionContainer className='pb-0'>
       <SectionHeader
         paragraph="Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod."
         headings={headings}
@@ -47,7 +48,7 @@ const UniqueViewSection: FC<UniqueViewSectionProps> = () => {
           />
         </div>
       </div>
-    </div>
+      </SectionContainer>
   );
 };
 

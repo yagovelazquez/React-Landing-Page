@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import { andreaDoe, jhenifferDoe, johnDoe } from '../../../../assets';
 import { AvatarSizesEnum } from '../../../../shared/components/Avatar/Avatar';
+import SectionContainer from '../../../../shared/components/layout/SectionContainer';
 import Paragraph from '../../../../shared/components/Texts/Paragraph';
 import SectionHeader from '../../../../shared/components/Texts/SectionHeader';
 import AvatarIconDescription from './components/AvatarIconDescription';
@@ -40,7 +41,7 @@ const avatarDescriptionList = [
 
 const OurTeamSection: FC<OurTeamSectionProps> = () => {
   return (
-    <div className="bg-gray pb-[30px] pt-[60px] flex-col flex items-center justify-center">
+    <SectionContainer className='bg-gray'>
       <SectionHeader
         paragraph="Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod."
         headings={headings}
@@ -61,7 +62,7 @@ const OurTeamSection: FC<OurTeamSectionProps> = () => {
         laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea,
         alias ut unde.
       </Paragraph>
-    </div>
+    </SectionContainer>
   );
 };
 

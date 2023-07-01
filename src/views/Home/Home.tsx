@@ -4,6 +4,8 @@ import DetailsSection from './components/DetailsSection';
 import UniqueViewSection from './components/UniqueViewSection';
 import GreatFeaturesSection from './components/GreatFeaturesSection';
 import OurTeamSection from './components/OurTeamSection/OurTeamSection';
+import MoreFeaturesSection from './components/MoreFeaturesSection/MoreFeaturesSection';
+
 
 function Home() {
   const carouselItems = [
@@ -23,6 +25,7 @@ function Home() {
       <UniqueViewSection />
       <GreatFeaturesSection />
       <OurTeamSection />
+      <MoreFeaturesSection />
     </div>
   );
 }

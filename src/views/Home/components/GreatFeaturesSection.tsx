@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { dashboard } from '../../../assets';
+import SectionContainer from '../../../shared/components/layout/SectionContainer';
 import LearnMoreBlock from '../../../shared/components/TextBlock/LearnMoreBlock';
 import SectionHeader from '../../../shared/components/Texts/SectionHeader';
 
@@ -13,9 +14,9 @@ const headings = [
 
 const GreatFeaturesSection: FC<GreatFeaturesSectionProps> = () => {
   return (
-    <div className="items-center justify-center flex flex-col mb-[60px]">
+    <SectionContainer>
       <SectionHeader
-        containerClassname="my-[60px]"
+        containerClassname="mb-[60px]"
         headings={headings}
         paragraph="Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod."
       />
@@ -28,7 +29,7 @@ const GreatFeaturesSection: FC<GreatFeaturesSectionProps> = () => {
       />
       <img className='w-[457px] h-[288px]' src={dashboard} alt="" />
       </div>
-    </div>
+      </SectionContainer>
   );
 };
 

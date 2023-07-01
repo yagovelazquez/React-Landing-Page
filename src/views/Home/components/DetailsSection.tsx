@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import SectionContainer from '../../../shared/components/layout/SectionContainer';
 import Detailtext from '../../../shared/components/TextBlock/Detailtext';
 
 interface DetailsSectionProps {
@@ -30,11 +31,11 @@ const detailsTextInfo = [
 
 const DetailsSection: FC<DetailsSectionProps> = () => {
   return (
-    <div className="flex justify-center mt-[80px] gap-8">
+    <SectionContainer className="pb-0 pt-[80px] flex-row gap-8">
       {detailsTextInfo.map((item) => (
         <Detailtext title={item.title} description={item.description} />
       ))}
-    </div>
+    </SectionContainer>
   );
 };
 
