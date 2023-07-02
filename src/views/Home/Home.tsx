@@ -5,6 +5,7 @@ import UniqueViewSection from './components/UniqueViewSection';
 import GreatFeaturesSection from './components/GreatFeaturesSection';
 import OurTeamSection from './components/OurTeamSection/OurTeamSection';
 import MoreFeaturesSection from './components/MoreFeaturesSection/MoreFeaturesSection';
+import OurWorkFlow from './components/OurWorkFlow/OurWorkFlow';
 
 
 function Home() {
@@ -26,6 +27,7 @@ function Home() {
       <GreatFeaturesSection />
       <OurTeamSection />
       <MoreFeaturesSection />
+      <OurWorkFlow />
     </div>
   );
 }

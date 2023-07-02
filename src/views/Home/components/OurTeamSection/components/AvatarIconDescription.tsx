@@ -37,7 +37,7 @@ const AvatarIconDescription: FC<AvatarIconDescriptionProps> = ({
       <Paragraph className="mb-[16px] text-center">{description}</Paragraph>
       <div className="flex gap-3">
         {mediaIcons.map((Icon) => (
-          <IconWithCircleBg Icon={Icon} iconClassName='w-[13px] h-[13px] ' />
+          <IconWithCircleBg Icon={Icon} containerClassName="w-[28px] h-[28px]" iconClassName='w-[13px] h-[13px] ' />
         ))}
       </div>
     </div>
