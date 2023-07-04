@@ -7,6 +7,7 @@ import andreaDoe from './andreaDoe.jpg'
 import jhenifferDoe from './jhenifferDoe.jpg'
 import johnDoe from './johnDoe.jpg'
 import iphone from './iphone.jpg'
+import allAvatar from './avatarAll.png'
 
 
-export { iphone, staringView, cellphone, notebook, dashboardAng40, dashboard, johnDoe, jhenifferDoe, andreaDoe };
+export { iphone, staringView, cellphone, notebook, dashboardAng40, dashboard, johnDoe, jhenifferDoe, andreaDoe, allAvatar };

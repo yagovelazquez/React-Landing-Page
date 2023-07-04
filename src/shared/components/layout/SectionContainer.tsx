@@ -1,7 +1,7 @@
-import { FC, ReactNode, useMemo } from 'react';
+import { FC, HTMLProps, ReactNode, useMemo } from 'react';
 import { twMerge } from 'tailwind-merge';
 
-interface SectionContainerProps {
+interface SectionContainerProps extends HTMLProps<HTMLDivElement> {
   children: ReactNode;
   className?: string;
 }
@@ -9,6 +9,7 @@ interface SectionContainerProps {
 const SectionContainer: FC<SectionContainerProps> = ({
   children,
   className,
+  ...rest
 }) => {
   const containerClass = useMemo(
     () =>
@@ -16,7 +17,7 @@ const SectionContainer: FC<SectionContainerProps> = ({
     [className]
   );
 
-  return <div className={containerClass}>{children}</div>;
+  return <div className={containerClass} {...rest}>{children}</div>;
 };
 
 export default SectionContainer;

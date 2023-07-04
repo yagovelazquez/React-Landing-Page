@@ -6,6 +6,7 @@ import GreatFeaturesSection from './components/GreatFeaturesSection';
 import OurTeamSection from './components/OurTeamSection/OurTeamSection';
 import MoreFeaturesSection from './components/MoreFeaturesSection/MoreFeaturesSection';
 import OurWorkFlow from './components/OurWorkFlow/OurWorkFlow';
+import OurUsersSaySection from './components/OurUsersSaySection/OurUsersSaySection';
 
 
 function Home() {
@@ -28,6 +29,7 @@ function Home() {
       <OurTeamSection />
       <MoreFeaturesSection />
       <OurWorkFlow />
+      <OurUsersSaySection />
     </div>
   );
 }
