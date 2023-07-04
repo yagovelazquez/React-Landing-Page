@@ -8,6 +8,7 @@ import MoreFeaturesSection from './components/MoreFeaturesSection/MoreFeaturesSe
 import OurWorkFlow from './components/OurWorkFlow/OurWorkFlow';
 import OurUsersSaySection from './components/OurUsersSaySection/OurUsersSaySection';
 import OurPartnersSaySecion from './components/OurPartnersSaySecion/OurPartnersSaySecion';
+import ExtraGreatFeaturesSection from './components/ExtraGreatFeaturesSection/ExtraGreatFeaturesSection';
 
 
 function Home() {
@@ -32,6 +33,7 @@ function Home() {
       <OurWorkFlow />
       <OurUsersSaySection />
       <OurPartnersSaySecion />
+      <ExtraGreatFeaturesSection />
     </div>
   );
 }
