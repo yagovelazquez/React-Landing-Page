@@ -15,7 +15,7 @@ export enum AvatarSizesEnum {
 }
 
 const avatarSizes = {
-  [AvatarSizesEnum.small]: 'md',
+  [AvatarSizesEnum.small]: 'w-[42px] h-[42px]',
   [AvatarSizesEnum.medium]: 'w-[89px] h-[89px]',
   [AvatarSizesEnum.big]: 'w-[128px] h-[128px]',
 };

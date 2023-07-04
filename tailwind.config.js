@@ -11,6 +11,7 @@ module.exports = {
         paragraph: '#aeaeae',
         darkPrimary: '#179d82',
         gray: '#f4f4f4',
+        darkerGray: '#888888'
       }
     },
   },
