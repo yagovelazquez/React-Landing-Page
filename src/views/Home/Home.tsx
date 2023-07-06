@@ -9,6 +9,7 @@ import OurWorkFlow from './components/OurWorkFlow/OurWorkFlow';
 import OurUsersSaySection from './components/OurUsersSaySection/OurUsersSaySection';
 import OurPartnersSaySecion from './components/OurPartnersSaySecion/OurPartnersSaySecion';
 import ExtraGreatFeaturesSection from './components/ExtraGreatFeaturesSection/ExtraGreatFeaturesSection';
+import AppPricingSection from './components/AppPricingSection/AppPricingSection';
 
 
 function Home() {
@@ -34,6 +35,7 @@ function Home() {
       <OurUsersSaySection />
       <OurPartnersSaySecion />
       <ExtraGreatFeaturesSection />
+      <AppPricingSection />
     </div>
   );
 }
