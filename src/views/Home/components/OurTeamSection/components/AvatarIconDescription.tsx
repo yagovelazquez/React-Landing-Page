@@ -1,20 +1,18 @@
 import { FC } from 'react';
-import Avatar, { AvatarSizesEnum } from '../../../../../shared/components/Avatar/Avatar';
+import Avatar, {
+  AvatarSizesEnum,
+} from '../../../../../shared/components/Avatar/Avatar';
 import Headings from '../../../../../shared/components/Texts/Heading';
 import Paragraph from '../../../../../shared/components/Texts/Paragraph';
-import { BiLogoLinkedin, BiLogoFacebook } from 'react-icons/bi';
-import { AiOutlineTwitter } from 'react-icons/ai';
-import IconWithCircleBg from '../../../../../shared/components/Icons/IconWithCircleBg';
+import SocialMediaIcons from '../../../../../shared/components/Icons/SocialMediaIcons';
 
 interface AvatarIconDescriptionProps {
   description: string;
   firstName: string;
   lastName: string;
   imgSrc: string;
-  size: AvatarSizesEnum,
+  size: AvatarSizesEnum;
 }
-
-const mediaIcons = [BiLogoLinkedin, BiLogoFacebook, AiOutlineTwitter];
 
 const AvatarIconDescription: FC<AvatarIconDescriptionProps> = ({
   imgSrc,
@@ -35,11 +33,7 @@ const AvatarIconDescription: FC<AvatarIconDescriptionProps> = ({
         </Headings>
       </div>
       <Paragraph className="mb-[16px] text-center">{description}</Paragraph>
-      <div className="flex gap-3">
-        {mediaIcons.map((Icon) => (
-          <IconWithCircleBg Icon={Icon} containerClassName="w-[28px] h-[28px]" iconClassName='w-[13px] h-[13px] ' />
-        ))}
-      </div>
+      <SocialMediaIcons />
     </div>
   );
 };

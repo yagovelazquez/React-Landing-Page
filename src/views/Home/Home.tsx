@@ -10,6 +10,7 @@ import OurUsersSaySection from './components/OurUsersSaySection/OurUsersSaySecti
 import OurPartnersSaySecion from './components/OurPartnersSaySecion/OurPartnersSaySecion';
 import ExtraGreatFeaturesSection from './components/ExtraGreatFeaturesSection/ExtraGreatFeaturesSection';
 import AppPricingSection from './components/AppPricingSection/AppPricingSection';
+import ContactUsSection from './components/ContactUsSection/ContactUsSection';
 
 
 function Home() {
@@ -36,6 +37,7 @@ function Home() {
       <OurPartnersSaySecion />
       <ExtraGreatFeaturesSection />
       <AppPricingSection />
+      <ContactUsSection />
     </div>
   );
 }
