@@ -1,5 +1,5 @@
 import Carousel from '../../shared/components/Carousel/Carousel';
-import { cellphone, staringView } from '../../assets';
+import { cellphone, headerOne, headerTwo, staringView } from '../../assets';
 import DetailsSection from './components/DetailsSection';
 import UniqueViewSection from './components/UniqueViewSection';
 import GreatFeaturesSection from './components/GreatFeaturesSection';
@@ -12,14 +12,10 @@ import ExtraGreatFeaturesSection from './components/ExtraGreatFeaturesSection/Ex
 import AppPricingSection from './components/AppPricingSection/AppPricingSection';
 import ContactUsSection from './components/ContactUsSection/ContactUsSection';
 
-
 function Home() {
   const carouselItems = [
-    <div className="w-full">
-      {' '}
-      <img alt="" className="w-full grayscale-[80%]" src={staringView} />
-    </div>,
-    <img alt="" className="w-full grayscale-[80%]" src={cellphone} />,
+    <img alt="" className="w-full h-full" src={headerOne} />,
+    <img alt="" className="w-full h-full" src={headerTwo} />,
   ];
 
   return (

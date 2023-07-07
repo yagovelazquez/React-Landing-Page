@@ -21,7 +21,7 @@ export default function Carousel({ carouselItems }: Carousel) {
       <Swiper
         style={{
           //@ts-ignore
-          '--swiper-navigation-color': '#000',
+          '--swiper-navigation-color': 'white',
           '--swiper-navigation-size': '20px',
           '--swiper-navigation-sides-offset': '110px',
         }}
